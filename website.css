@@ -1,0 +1,15 @@
+@keyframes modalSpring {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-content {
+    /* ... keep your existing styles ... */
+    animation: modalSpring 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
